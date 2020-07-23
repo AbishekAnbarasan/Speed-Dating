@@ -2,7 +2,7 @@
 ## This project is about prediction of whether the participant of a date decide to give his/her partner a second date after a short experimental Speed Dating event. I have implemented my own version machine learning algorithms from <ins>scratch using python</ins> without the use of any publicly available libraries like scikit-learn or scipy.
 
 ### <ins>Table of contents</ins>:
-  -Data Description[data_table]
+  -Data Description[https://github.com/AbishekAnbarasan/Speed-Dating/blob/master/README.md#data-description-data_table]
 
 ### <ins>Data description {#data_table}</ins>:
 The dating dataset consists of 6744 speed dating events in the comma-separated format(experimental dataset).In this set of speed dating experiments, each speed date happens between a pair of participants.
