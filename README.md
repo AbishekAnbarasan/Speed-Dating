@@ -22,6 +22,10 @@ During the speed date, the pair of participants in a date chat with each other f
 |:--:| 
 | *Bar Plot of Male vs Female attributes* |
 
+| ![scatter_plot1](images/2_2a.png) | ![scatter_plot1(images/2_2b.png) | ![scatter_plot1](images/2_2c.png)
+|:--:|:--:| :--: 
+| *attractive partner vs success rate* | *sincere partner vs success rate* | *intelligence partner vs success rate* 
+
 <a name="table"></a>
 | Field | Meaning |
 | ----------- | ----------- |
