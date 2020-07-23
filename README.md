@@ -18,10 +18,9 @@ During the speed date, the pair of participants in a date chat with each other f
 
 <a name="eda"></a>
 ### Exploratory Data Analysis:
-![Bar Plot of Male vs Female attributes](images/2_1.png)
-*Bar Plot of Male vs Female attributes*
-
-
+| ![Bar Plot of Male vs Female attributes](images/2_1.png) | 
+|:--:| 
+| *Bar Plot of Male vs Female attributes* |
 
 <a name="table"></a>
 | Field | Meaning |
