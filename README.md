@@ -20,21 +20,43 @@ During the speed date, the pair of participants in a date chat with each other f
 
 <a name="eda"></a>
 ### Exploratory Data Analysis:
-| ![Bar Plot of Male vs Female attributes](images/2_1.png) | 
+| ![Bar Plot of Male vs Female attributes](images/nbc/2_1.png) | 
 |:--:| 
 | *Bar Plot of Male vs Female attributes* |
 
-| ![scatter_plot1](images/2_2a.png) | ![scatter_plot2](images/2_2b.png) | ![scatter_plot3](images/2_2c.png)
+| ![scatter_plot1](images/nbc/2_2a.png) | ![scatter_plot2](images/nbc/2_2b.png) | ![scatter_plot3](images/nbc/2_2c.png)
 |:--:|:--:| :--: 
 | *attractive partner vs success rate* | *sincere partner vs success rate* | *intelligence partner vs success rate* 
 
-| ![scatter_plot4](images/2_2d.png) | ![scatter_plot5](images/2_2e.png) | ![scatter_plot6](images/2_2f.png)
+| ![scatter_plot4](images/nbc/2_2d.png) | ![scatter_plot5](images/nbc/2_2e.png) | ![scatter_plot6](images/nbc/2_2f.png)
 |:--:|:--:| :--: 
 | *funny partner vs success rate* | *ambition partner vs success rate* | *shared_interest partner vs success rate* 
 
 <a name="nbc"></a>
 ### Naive Bayes Classifier:
+Naive Bayes classifier is a probabilistic machine learning model that’s used for classification task based on the Bayes theorem.
+ <img src="https://render.githubusercontent.com/render/math?math=P(A|B)=\frac{P(B|A)*P(A)}{P(B)}">
+ 
+```
+nbc=classifier(trainingSet,testSet)
+nbc.nbc(tfrac)
+nbc.predict(test/train)
+```
 
+The pseudo code for the nbc algorithm is:
+  - Memorize the training data
+  - calculate mean and sd of predictor variables in each class
+  - Repeat
+    - Calculate prior probability until probability of all predictor variables are found
+  - Apply Laplacian Smoothing
+  - Calculate likelihood of each class
+  - Pick the argmax of likelihood
+  
+The algorithm acheieved an training and testing accuracy of **77 percent** and **75 percent** respectively and the training and validation plots are shown below.
+
+| ![Bar Plot of Male vs Female attributes](images/nbc/5_2.png) |  ![Bar Plot of Male vs Female attributes](images/nbc/5_3.png)
+|:--:| :--:
+| *Accuracy variation over varied bin size* | *Accuracy variation over fraction of training data*
 
 
 <a name="table"></a>
