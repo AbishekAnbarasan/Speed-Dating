@@ -19,5 +19,53 @@ During the speed date, the pair of participants in a date chat with each other f
 | race_o | race of partner | 
 | same_race | whether participant and partner belong to same race |
 | importance_same_race | participant rating on importance of two people to be of same race | 
+| importance_same_religion | participant rating on importance of two people to be of same religion | 
+| field | participant's field of study |
+| pref_o_attractive | partner's allocated point on attractiveness | 
+| pref_o_sincere | partner's allocated point on sincere | 
+| pref_o_intelligence | partner's allocated point on intelligence | 
+| pref_o_funny | partner's allocated point on funny | 
+| pref_o_ambitious | partner's allocated point on ambitious | 
+| pref_o_shared_interests | partner's allocated point on shared_interests | 
+| attractive_important | participant's allocated point on attractiveness | 
+| sincere_important | participant's allocated point on sincereness | 
+| intelligence_important | participant's allocated point on intelligence | 
+| funny_important | participant's allocated point on being funny | 
+| shared_interests_important | participant's allocated point on shared interests | 
+| ambition_important | participant's allocated point on being ambitious | 
+| attractive | participant self rating on attractiveness
+| sincere | participant self rating on sincere
+| intelligence | participant self rating on intelligence
+| funny | participant self rating on funny
+| ambition | participant self rating on ambition
+| attractive_partner | participant  rating on partner's attractiveness
+| sincere_partner | participant rating on partner's sincere
+| intelligence_partner | participant rating on partner's intelligence
+| funny_partner | participant rating on partner's funny
+| ambition_partner | participant rating on partner's ambition
+| shared_interests_partner | participant rating on partner's shared_interests
+| sports | participant self rating on interest in sports
+| Tvsports | participant self rating on interest in Tvsports
+| Exercise | participant self rating on interest in exercise
+| dining | participant self rating on interest in dining
+| museums | participant self rating on interest in museums
+| art | participant self rating on interest in art
+| hiking | participant self rating on interest in hiking
+| gaming | participant self rating on interest in gaming
+| clubbing | participant self rating on interest in clubbing
+| reading | participant self rating on interest in reading
+| Tv | participant self rating on interest in Tv
+| Theater | participant self rating on interest in theater
+| movies | participant self rating on interest in movies
+| concerts | participant self rating on interest in concert
+| music | participant self rating on interest in music
+| shopping | participant self rating on interest in shopping
+| yoga | participant self rating on interest in yoga
+| interests_correlate | correlation b/w participant and partner rating in interests
+| expected_happy_with_sd_people | participant's rating on how happy 
+he/she expects to be with partner
+| like | participant's rating on how much he/she likes partner
+| decision | participant's decision on whether he/she would like to see date in future
+
 
 
