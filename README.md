@@ -3,6 +3,7 @@
 
 ### <ins>Table of contents</ins>:
   - [ Data Description ](#desc)
+  - [ EDA ](#eda)
 
 
 <a name="desc"></a>
@@ -14,6 +15,12 @@ information about themselves such as their self-evaluation on the six attributes
 their levelof interests in a wide range of activities (e.g., museum, arts, dinning, etc.).
 
 During the speed date, the pair of participants in a date chat with each other for 2 minutes, andeach participant provides some evaluations for their partner, including ratings of their partner onthe six attributes (i.e., “attractiveness”, “sincerity”, “intelligence”, “fun”, “ambition”, “sharedinterests”), ratings on how happy they expect it to be if they continue romantic relationships withtheir partner, and ratings on how much they like their partner.At the end of the speed date, each participant in a date makes a decision of whether he/she wants to give their partner a second date. For detailed description of data, look at the [ table ](#table) 
+
+<a name="eda"></a>
+### Exploratory Data Analysis:
+![Bar Plot of Male vs Female attributes](image.jpg)
+
+
 
 <a name="table"></a>
 | Field | Meaning |
