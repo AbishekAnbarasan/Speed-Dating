@@ -4,6 +4,8 @@
 ### <ins>Table of contents</ins>:
   - [ Data Description ](#desc)
   - [ EDA ](#eda)
+  - [ **Machine Learning models**](#nbc)
+    - [ Naive Bayes Classifier ](#nbc)
 
 
 <a name="desc"></a>
@@ -29,6 +31,11 @@ During the speed date, the pair of participants in a date chat with each other f
 | ![scatter_plot4](images/2_2d.png) | ![scatter_plot5](images/2_2e.png) | ![scatter_plot6](images/2_2f.png)
 |:--:|:--:| :--: 
 | *funny partner vs success rate* | *ambition partner vs success rate* | *shared_interest partner vs success rate* 
+
+<a name="nbc"></a>
+### Naive Bayes Classifier:
+
+
 
 <a name="table"></a>
 | Field | Meaning |
