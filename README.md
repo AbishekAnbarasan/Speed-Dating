@@ -6,6 +6,8 @@
   - [ EDA ](#eda)
   - [ **Machine Learning models**](#nbc)
     - [ Naive Bayes Classifier ](#nbc)
+    - [ Logistic regression Classifier ](#lr)
+    - [ Support Vector Machine ](#svm)
 
 
 <a name="desc"></a>
@@ -52,11 +54,48 @@ The pseudo code for the nbc algorithm is:
   - Calculate likelihood of each class
   - Pick the argmax of likelihood
   
-The algorithm acheieved an training and testing accuracy of **77 percent** and **75 percent** respectively and the training and validation plots are shown below.
+The algorithm acheieved a training and testing accuracy of **77 percent** and **75 percent** respectively and the training and validation plots are shown below.
 
 | ![Bar Plot of Male vs Female attributes](images/nbc/5_2.png) |  ![Bar Plot of Male vs Female attributes](images/nbc/5_3.png)
 |:--:| :--:
 | *Accuracy variation over varied bin size* | *Accuracy variation over fraction of training data*
+
+<a name="lr"></a>
+### Logistic regression classifier:
+Logistic regression is a statistical model that in its basic form uses a logistic function (<img src="https://render.githubusercontent.com/render/math?math=P=\frac{e^{(a %2B bx)}}{1 %2B e^{(a %2B bx)}}">) to model a binary dependent variable
+
+The pseudo code for the Logistic regression algorithm is:
+  - Seperate label and features
+  - Add Intercept and map labels in range[-1,1]
+  - Initialize weights
+  - Repeat
+    - Compute <img src="https://render.githubusercontent.com/render/math?math=z=w^T*{x_i}">
+    - Calculate loss 
+    - Update weights
+  - Stop Iteration after convergence
+
+```
+lr(trainingSet,testSet,stepSize,maxIterations,threshold,lamda)
+```
+The algorithm acheieved a training and testing accuracy of **71 percent** and **74 percent** respectively and the training and validation plots are shown below.
+
+
+<a name="svm"></a>
+###  Support Vector Machine:
+A Support Vector Machine is a discriminative classifier formally defined by a separating hyperplane
+
+The pseudo code for the SVM algorithm is:
+  - Load training data <img src="https://render.githubusercontent.com/render/math?math=\alpha<0">
+  - set value for C
+  - Repeat
+    - For all <img src="https://render.githubusercontent.com/render/math?math=({x_i,y_i}),({x_j,y_j})"> optimize  <img src="https://render.githubusercontent.com/render/math?math=(\alpha_i,\alpha_j")>
+  - Stop Iteration after convergence
+  -Retain support vectors <img src="https://render.githubusercontent.com/render/math?math=\alpha_i>0">
+
+```
+svm(trainingSet,testSet,stepSize,maxIterations,threshold,lamda)
+```
+The algorithm acheieved a training and testing accuracy of **76 percent** and **79 percent** respectively and the training and validation plots are shown below.
 
 
 <a name="table"></a>
