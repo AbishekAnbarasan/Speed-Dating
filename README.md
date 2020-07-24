@@ -8,6 +8,7 @@
     - [ Naive Bayes Classifier ](#nbc)
     - [ Logistic regression Classifier ](#lr)
     - [ Support Vector Machine ](#svm)
+    - [ Decision Tree ](#tree)
 
 
 <a name="desc"></a>
@@ -77,7 +78,7 @@ The pseudo code for the Logistic regression algorithm is:
 ```
 lr(trainingSet,testSet,stepSize,maxIterations,threshold,lamda)
 ```
-The algorithm acheieved a training and testing accuracy of **71 percent** and **74 percent** respectively and the training and validation plots are shown below.
+The algorithm acheieved a training and testing accuracy of **72 percent** and **70 percent** respectively and the training and validation plots are shown below.
 
 
 <a name="svm"></a>
@@ -95,14 +96,61 @@ The pseudo code for the SVM algorithm is:
 ```
 svm(trainingSet,testSet,stepSize,maxIterations,threshold,lamda)
 ```
-The algorithm acheieved a training and testing accuracy of **76 percent** and **79 percent** respectively and the training and validation plots are shown below.
+The algorithm acheieved a training and testing accuracy of **78 percent** and **73 percent** respectively and the training and validation plots are shown below.
 
 | ![svm](svm/lr_svm.JPG) | 
 |:--:| 
 | *Comparison of Accuracies over various algorithms* | 
 
+<a name="tree"></a>
+### Decision Tree:
+I have implemented the decision tree algorithm for multinomial classification problems and also used ensemble methods like bagging and random forests to boost the performance of the classifier.
+
+pseudo code for the Decision tree algorithm:
+  - Build Tree recursively
+    - If training example = null, return
+    - if examples have same label. return the leaf node with resp label
+    - if attributes=null, return leaf node with majority label
+    - Choose the best attribute based on chosen method
+    - create internal node of best attribute with n child
+    - for attribute's ith possible value
+      - recurse(best attribute of ith child of chosen attribute
+      
+Attribute Selection criteria used:
+  - gini gain
+  - chi square score
+  - Information Gain
+  
+Pruning Methods applied:
+  - Post-pruning:Seperated data into training data and validation data and grew a tree followed by pruning to eliminate nodes from tree
+  - Pre pruning:Applied the mentioned statistical test to decide whether to expand a node and added a penalty to score function to prefer trees with smaller size.
+
+Obatined a training accuracy of **84 percent** and a testing accuracy of **80 percent** for the multinomial decision tree classifier built.
+
+```
+obj=tree(trainingSet,testSet,maxDepth=8,exampleLimit=50,decisionVar='decision',vectorised=False)
+modelIdx=int(input("Enter model index : eg.1 or 2 or 3"))
+    if modelIdx==1:
+        decisionTree(trainingSet,testSet)
+    elif modelIdx==2:
+        bagging(trainingSet,testSet)
+    elif modelIdx==3:
+        randomForests(trainingSet,testSet)
+    else:
+        print("Invalid Input")
+```
+
+#### Ensemble models:
+
+In addition to the implementation of decisioin tree, I included ensemble models like bagging and random forests to improve the performance and obtained a training accuracy of **87 percent** and testing accuracy of **85 percent** for Random forests model which was the best model obtained.
+
+| ![trees_one](images/trees/depth.PNG) |  ![trees_two](images/trees/numberoftrees.PNG)
+|:--:| :--:
+| *Accuracy based on varying depth* | *Accuracy based on varying number of trees*
+
 
 <a name="table"></a>
+### Data features
 | Field | Meaning |
 | ----------- | ----------- |
 | gender | gender of participant | 
