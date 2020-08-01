@@ -204,7 +204,7 @@ In addition to the implementation of decisioin tree, I included ensemble models 
 | yoga | participant self rating on interest in yoga
 | interests_correlate | correlation b/w participant and partner rating in interests
 | expected_happy_with_sd_people | participant's rating on how happy 
-he/she expects to be with partner
+he/she expects to be with partner |
 | like | participant's rating on how much he/she likes partner
 | decision | participant's decision on whether he/she would like to see date in future
 
