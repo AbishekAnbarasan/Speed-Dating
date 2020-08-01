@@ -89,7 +89,7 @@ The pseudo code for the SVM algorithm is:
   - Load training data <img src="https://render.githubusercontent.com/render/math?math=\alpha<0">
   - set value for C
   - Repeat
-    - For all <img src="https://render.githubusercontent.com/render/math?math=({x_i,y_i}),({x_j,y_j})"> optimize  <img src="https://render.githubusercontent.com/render/math?math=(\alpha_i,\alpha_j")>
+    - For all <img src="https://render.githubusercontent.com/render/math?math=({x_i,y_i}),({x_j,y_j})"> optimize  <img src="https://render.githubusercontent.com/render/math?math=(\alpha_i,\alpha_j)">
   - Stop Iteration after convergence
   -Retain support vectors <img src="https://render.githubusercontent.com/render/math?math=\alpha_i>0">
 
